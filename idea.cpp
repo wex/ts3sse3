@@ -17,7 +17,9 @@ bool    isRunning       = false;
 void initialize()
 {
     readProps();
-    ping();
+    
+    // First ping always forced.
+    ping(true);
 }
 
 void readProps()
