@@ -1,0 +1,57 @@
+// %PROGRAMDATA%/SteelSeries/SteelSeries Engine 3/coreProps.json
+{
+  "address": "127.0.0.1:51248"
+}
+
+
+// http://127.0.0.1:<port>/game_metadata
+{
+  "game": "TS3SSE3",
+  "game_display_name": "TeamSpeak 3",
+  "developer": "Niko Hujanen"
+}
+
+// http://127.0.0.1:<port>/game_heartbeat
+{
+  "game": "TS3SSE3"
+}
+
+// http://127.0.0.1:<port>/bind_game_event
+{
+  "game": "TS3SSE3",
+  "event": "MUTED",
+  "min_value": 0,
+  "max_value": 1,
+  "icon_id": 19,
+  "value_optional": false,
+  "handlers": [
+    {
+      "device-type": "keyboard",
+      "zone": "function-keys",
+      "color": {"gradient": {"zero": {"red": 255, "green": 0, "blue": 0},
+                             "hundred": {"red": 0, "green": 255, "blue": 0}}},
+      "mode": "percent"
+    }
+  ]
+}
+
+// http://127.0.0.1:<port>/game_event
+{
+  "game": "TS3SSE3",
+  "event": "MUTED",
+  "data": {
+      "value": 1
+  }
+}
+
+
+// http://127.0.0.1:<port>/remove_game_event
+{
+  "game": "TS3SSE3",
+  "event": "MY_EVENT"
+}
+
+// http://127.0.0.1:<port>/remove_game
+{
+  "game": "TS3SSE3"
+}
